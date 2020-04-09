@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import StorePicker from './components/StorePicker';
+import Header from './components/Header';
+import Order from './components/Order';
+import Inventory from './components/Inventory';
 import './App.css';
+import './css/styles.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="catch-of-the-day">
+        <div className="menu">
+          <Header></Header>
+        </div>
+        <Order></Order>
+        <Inventory></Inventory>
+      </div>
+    )
+  }
+
 }
 
 export default App;
