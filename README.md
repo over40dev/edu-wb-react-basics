@@ -1,3 +1,9 @@
+# Code based on "React for Begginers" course by Wes Bos
+
+For course see [Wes Bos courses](https://courses.wesbos.com)
+
+## Starter Code
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
