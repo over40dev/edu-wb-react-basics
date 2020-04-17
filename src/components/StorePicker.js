@@ -3,10 +3,6 @@ import { getFunName } from "../helpers";
 
 class StorePicker extends Component {
 
-  constructor() {
-    super();
-    this.goToStore = this.goToStore.bind(this);
-  }
   state = {
     storeCount: 0,
   };
@@ -17,10 +13,9 @@ class StorePicker extends Component {
     // 1. Stop the form from submitting
     event.preventDefault();
     // 2. get the text from the input
-    console.log(this.myInput);
-
-    // 3.
-    console.log(`going to store`, event);
+    const storeName = this.myInput.current.value;
+    // 3. change page to /store/whatever-was-entered
+    this.props.history.push(`/store/${storeName}`);
   }
 
   render() {
@@ -35,7 +30,7 @@ class StorePicker extends Component {
           defaultValue={getFunName()}
         />
         <button type="submit">
-          Visit Store <span aria-label="right-arrow">➡️</span>
+          Visit Store <span role="img" aria-label="right-arrow">➡️</span>
         </button>
       </form>
     );
