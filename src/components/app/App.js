@@ -1,10 +1,8 @@
 import React from 'react';
-import StorePicker from './components/StorePicker';
-import Header from './components/Header';
-import Order from './components/Order';
-import Inventory from './components/Inventory';
+import Header from '../Header';
+import Order from '../Order';
+import Inventory from '../Inventory';
 import './App.css';
-import './css/styles.css';
 
 class App extends React.Component {
   render() {
