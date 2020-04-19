@@ -15,7 +15,7 @@ const fishes = {
     desc:
       "These tender, mouth-watering beauties are a fantastic hit at any dinner party.",
     price: 3200,
-    status: "available"
+    status: "unavailable"
   },
 
   fish3: {

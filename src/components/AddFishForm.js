@@ -61,10 +61,4 @@ class AddFishForm extends React.Component {
 }
 
 export default AddFishForm;
-/* 
-name
-price
-status
-desc
-image
-*/
+
