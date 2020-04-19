@@ -2,8 +2,7 @@ import React from "react";
 import { formatPrice } from "../helpers";
 
 const Fish = (props) => {
-  const { name, image, desc, price, status } = props.fish;
-  console.log(status);
+  const { name, image, desc, price, } = props.fish;
   return (
     <li className="menu-fish" >
       <img src={image} alt={name} />
